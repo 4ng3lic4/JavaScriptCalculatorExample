@@ -9,35 +9,38 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
     <div class = "calculator-grid">
 <div class= "output">
-<div class = "previous-operand">123 + </div>
-<div class = "current-operand">456</div>
+    <!-- we will use selector in JavaScript that will be different than the CSS -->
+<div data-previous-operand class = "previous-operand"> </div>
+<div data-current-operand class = "current-operand"></div>
 
 
 </div>
     <!-- now we will set the buttons -->
 
     <!-- we assign a class to make these two buttons bigger than the rest -->
-    <button class = "span-two"> AC</button>
-    <button> DEL</button>
-    <button>÷</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>*</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>+</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>-</button>
-    <button>.</button>
-    <button>0</button>
+    <button data-all-clear class = "span-two"> AC</button>
+    <button data-delete> DEL</button>
+    <!-- assign a class to work on JavaScript on the operators and the numbers-->
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number="">.</button>
+    <button data-number>0</button>
     <!-- here we assign the class to make this button grow lithe the ones on the top -->
-    <button class = "span-two"> = </button>
+    <button data-equals class = "span-two"> = </button>
 
     <!-- At this point, we can see the buttons aligned when we open the index in the browser -->
 
